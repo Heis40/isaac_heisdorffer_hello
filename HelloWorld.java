@@ -1,4 +1,5 @@
-public class HelloWorld {
+public class HelloWorld 
+{
       
     String name; 
     String message;
@@ -21,18 +22,20 @@ public class HelloWorld {
     {
         System.out.println("My name is " + name + " and I am " + age + " years old.");
     }
-    //overload greet method
+    
     public void greet() 
     { 
         System.out.println("Hello, " + name + "!"); 
     } 
     
+    //overload greet method
     public void greet(String message) 
     { 
         System.out.println(message + ", " + name + "!"); 
     }
 
-    public static void main(String[] args) { 
+    public static void main(String[] args) 
+    { 
         HelloWorld student = new HelloWorld("Isaac",21,"Good morning");  
         student.introduce();
         student.greet(); 
