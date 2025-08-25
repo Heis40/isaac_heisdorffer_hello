@@ -2,19 +2,25 @@ public class HelloWorld
 {
       
     String name; 
-    String message;
+    //String message;
     private int age;
     
 
-    public HelloWorld(String name) { 
-    this.name = name; 
+    public HelloWorld(String name) 
+    { 
+    //this.name = name;
+    this(name, 0, null); 
     } 
 
     public HelloWorld(String name, int age, String message)
     {
      this.name = name;
      this.age = age; 
-     this.message = message;
+     //this.message = message;
+     //if (message != null)
+     //{
+      //  greet(message);
+     //}
     }
 
     //add Introduce method
@@ -36,9 +42,9 @@ public class HelloWorld
 
     public static void main(String[] args) 
     { 
-        HelloWorld student = new HelloWorld("Isaac",21,"Good morning");  
+        HelloWorld student = new HelloWorld("Isaac",21,"Good Morning");  
         student.introduce();
         student.greet(); 
-        student.greet("Good morning");
+        student.greet("Good Morning");
     } 
 }
